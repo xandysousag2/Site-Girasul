@@ -238,4 +238,133 @@ h1, h2, h3, h4 {
   .main-nav {
     display: none; /* depois ativamos via JS para menu mobile */
   }
+
+}
+
+/* Cards grid (categorias) */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 18px 18px 20px;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.card-list {
+  padding-left: 18px;
+  margin: 0 0 8px;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.card-list li {
+  margin-bottom: 4px;
+}
+
+.card-note {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Steps (processo) */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.step {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 18px 18px 20px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background-color: #2563eb;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Segmentos */
+.segments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.segment-item {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  color: #374151;
+  background-color: #ffffff;
+}
+
+/* Nav toggle (mobile – base visual, JS depois) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  padding: 4px;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background-color: #111827;
+}
+
+/* Responsivo extra */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .hero {
+    padding: 56px 0 40px;
+  }
 }
