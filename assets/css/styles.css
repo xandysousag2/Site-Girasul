@@ -1,37 +1,33 @@
 /* =============================================
-   GIRASUL REPRESENTAÇÕES – styles.css
+   RESET E BASE
    ============================================= */
-
-/* Variáveis */
-:root {
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-bg-light: #f5f7fa;
-  --color-text: #111827;
-  --color-text-soft: #4b5563;
-  --color-border: #e5e7eb;
-  --radius: 14px;
-  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
-}
-
-/* Reset básico */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-text: #111827;
+  --color-text-soft: #4b5563;
+  --color-border: #e5e7eb;
+  --color-bg-light: #f9fafb;
+  --radius: 14px;
+  --shadow-card: 0 4px 16px rgba(15, 23, 42, 0.07);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   color: var(--color-text);
   background-color: #ffffff;
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 img {
@@ -39,30 +35,62 @@ img {
   max-width: 100%;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Títulos */
-h1, h2, h3, h4, .btn, .badge {
+ul {
+  list-style: none;
+}
+
+/* =============================================
+   TIPOGRAFIA
+   ============================================= */
+h1, h2, h3, h4,
+.btn,
+.badge {
   font-family: "Montserrat", system-ui, sans-serif;
 }
 
-h1 { font-size: 2.2rem; line-height: 1.15; }
-h2 { font-size: 1.85rem; line-height: 1.2; }
-h3 { font-size: 1.15rem; line-height: 1.3; }
-
-/* Container */
-.container {
-  width: 100%;
-  max-width: 1160px;
-  padding: 0 24px;
-  margin: 0 auto;
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-text);
 }
 
-/* Seções */
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* =============================================
+   LAYOUT
+   ============================================= */
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .section {
   padding: 72px 0;
 }
@@ -75,27 +103,28 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
   background-color: #0b1120;
 }
 
-.section-cta h2,
-.section-cta .section-lead {
+.section-cta h2 {
   color: #ffffff;
 }
 
 .section-header {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
+}
+
+.section-header.text-center {
+  text-align: center;
 }
 
 .section-lead {
-  max-width: 620px;
-  margin: 12px auto 0;
   color: var(--color-text-soft);
-  font-size: 1rem;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 12px auto 0;
 }
 
-.section-cta .section-lead {
-  color: #9ca3af;
+.text-center {
+  text-align: center;
 }
-
-.text-center { text-align: center; }
 
 /* =============================================
    HEADER
@@ -106,6 +135,7 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
   z-index: 100;
   background-color: #ffffff;
   border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
 }
 
 .header-inner {
@@ -116,7 +146,7 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
 }
 
 .brand-logo {
-  height: 44px;
+  height: 56px;
   width: auto;
 }
 
@@ -124,11 +154,11 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
   display: flex;
   align-items: center;
   gap: 28px;
-  font-size: 0.95rem;
-  font-weight: 500;
 }
 
 .main-nav a {
+  font-size: 0.95rem;
+  font-weight: 500;
   color: var(--color-text);
   transition: color 0.2s;
 }
@@ -137,7 +167,6 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
   color: var(--color-primary);
 }
 
-/* Botão menu mobile */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -201,7 +230,7 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
 }
 
 .section-cta .btn-outline:hover {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* =============================================
@@ -237,9 +266,33 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
 
 .hero-text .lead {
   color: var(--color-text-soft);
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   max-width: 46ch;
   font-size: 1.05rem;
+}
+
+.hero-highlights {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hero-highlights li {
+  font-size: 0.95rem;
+  color: var(--color-text-soft);
+  padding-left: 20px;
+  position: relative;
+}
+
+.hero-highlights li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
 .hero-ctas {
@@ -253,7 +306,51 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
   border-radius: var(--radius);
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
   object-fit: cover;
-  max-height: 420px;
+  max-height: 440px;
+}
+
+/* =============================================
+   CATEGORIAS RÁPIDAS (home)
+   ============================================= */
+.home-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.home-cat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 22px;
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.home-cat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  border-color: #bfdbfe;
+}
+
+.home-cat-icon {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.home-cat h3 {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.home-cat p {
+  font-size: 0.88rem;
+  color: var(--color-text-soft);
+  line-height: 1.6;
 }
 
 /* =============================================
@@ -287,7 +384,96 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
 }
 
 /* =============================================
-   CARDS DE CATEGORIAS
+   POR QUE GIRASUL
+   ============================================= */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.why-item {
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.why-icon {
+  font-size: 1.8rem;
+}
+
+.why-item h4 {
+  color: var(--color-text);
+}
+
+.why-item p {
+  font-size: 0.9rem;
+  color: var(--color-text-soft);
+}
+
+/* =============================================
+   SEGMENTOS
+   ============================================= */
+#segmentos.section {
+  background: radial-gradient(circle at top left, #eff6ff 0%, #ffffff 50%);
+}
+
+.segments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.segment-item {
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.segment-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+  border-color: #93c5fd;
+}
+
+/* =============================================
+   CTA CONTATO
+   ============================================= */
+.cta-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.cta-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cta-label {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* =============================================
+   CARDS DE CATEGORIAS (solucoes-industriais)
    ============================================= */
 .cards-grid {
   display: grid;
@@ -326,7 +512,6 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
 
 .card-body h3 {
   color: var(--color-text);
-  margin-bottom: 2px;
 }
 
 .card-body p {
@@ -390,77 +575,34 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
 }
 
 /* =============================================
-   SEGMENTOS
-   ============================================= */
-.segments-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 12px;
-}
-
-.segment-item {
-  padding: 12px 18px;
-  border-radius: 999px;
-  border: 1px solid var(--color-border);
-  font-size: 0.9rem;
-  color: var(--color-text);
-  background-color: #ffffff;
-  text-align: center;
-}
-
-/* =============================================
-   CTA CONTATO
-   ============================================= */
-.cta-contacts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-  margin-top: 8px;
-}
-
-.cta-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.cta-label {
-  font-size: 0.85rem;
-  color: #9ca3af;
-  font-weight: 500;
-}
-
-/* =============================================
    FOOTER
    ============================================= */
 .site-footer {
   background-color: #0b1120;
   color: #e5e7eb;
-  padding: 48px 0 20px;
+  padding: 56px 0 20px;
 }
 
 .footer-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 48px;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .footer-logo {
-  height: 36px;
+  height: 42px;
   width: auto;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .footer-text {
   font-size: 0.9rem;
   color: #9ca3af;
-  max-width: 360px;
-  line-height: 1.7;
+  max-width: 320px;
+  line-height: 1.8;
 }
 
 .footer-text a {
@@ -526,6 +668,14 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
     display: flex;
   }
 
+  .home-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
   .cta-contacts {
     flex-direction: column;
     align-items: center;
@@ -533,5 +683,6 @@ h3 { font-size: 1.15rem; line-height: 1.3; }
 
   .footer-grid {
     flex-direction: column;
+    gap: 32px;
   }
 }
