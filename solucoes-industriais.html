@@ -24,14 +24,14 @@
              class="brand-logo">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav" id="main-nav">
         <a href="index.html">Home</a>
         <a href="#solucoes">Soluções industriais</a>
         <a href="#segmentos">Segmentos atendidos</a>
         <a href="#contato" class="btn btn-primary">Falar com especialista</a>
       </nav>
 
-      <button class="nav-toggle" aria-label="Abrir menu">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -39,43 +39,46 @@
 
   <main>
 
-    <!-- HERO SOLUÇÕES INDUSTRIAIS -->
-    <section class="hero hero-industriais">
+    <!-- HERO -->
+    <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="badge">Representações Técnicas · Soluções Industriais</p>
           <h1>Soluções industriais completas com marcas líderes e suporte técnico.</h1>
           <p class="lead">
-            Representamos fabricantes de referência em estruturas eletromecânicas, compósitos em PRFV,
-            engenharia & inspeção, iluminação e ventilação natural, medição de água e gás, soluções
-            elétricas e produtos em polipropileno.
+            A Girasul representa fabricantes de referência em soluções industriais —
+            de eletromecânicos e estruturas em PRFV a sistemas de medição, iluminação
+            e ventilação natural. Atendimento consultivo e foco em aplicação prática.
           </p>
           <div class="hero-ctas">
-            <a href="#solucoes" class="btn btn-primary">
-              Ver categorias de soluções
+            <a href="https://wa.me/5541999214921?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Girasul%20e%20gostaria%20de%20falar%20sobre%20solu%C3%A7%C3%B5es%20industriais."
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener">
+              Falar com especialista
             </a>
-            <a href="#contato" class="btn btn-outline">
-              Falar com um especialista
+            <a href="#solucoes" class="btn btn-outline">
+              Ver categorias de soluções
             </a>
           </div>
         </div>
 
         <div class="hero-visual">
-          <img src="assets/img/ilustracoes/hero-industrial.webp"
-               alt="Estruturas e equipamentos em ambiente industrial"
+          <img src="assets/img/ilustracoes/hero-industrial-girasul.webp"
+               alt="Ambiente industrial moderno com linhas de produção e estruturas metálicas"
                class="hero-image">
         </div>
       </div>
     </section>
 
-    <!-- MARCAS -->
+    <!-- MARCAS REPRESENTADAS -->
     <section class="section section-light">
       <div class="container">
         <div class="section-header text-center">
-          <h2>Nossos parceiros e fabricantes representados</h2>
+          <h2>Fabricantes que representamos</h2>
           <p class="section-lead">
-            Trabalhamos com marcas selecionadas pela qualidade técnica, certificações e histórico
-            de fornecimento ao mercado industrial.
+            Trabalhamos com marcas selecionadas pela qualidade, certificações e
+            confiabilidade comprovada no mercado industrial.
           </p>
         </div>
 
@@ -86,7 +89,30 @@
           <div class="logo-item">
             <img src="assets/img/logos/logo-ledstar.webp" alt="Ledstar">
           </div>
-          <!-- adicione aqui as demais logos quando tiver -->
+          <div class="logo-item">
+            <img src="assets/img/logos/logo-beam.webp" alt="Beam">
+          </div>
+          <div class="logo-item">
+            <img src="assets/img/logos/logo-dakota.webp" alt="Dakota">
+          </div>
+          <div class="logo-item">
+            <img src="assets/img/logos/logo-enmac.webp" alt="Enmac">
+          </div>
+          <div class="logo-item">
+            <img src="assets/img/logos/logo-hadley.webp" alt="Hadley">
+          </div>
+          <div class="logo-item">
+            <img src="assets/img/logos/logo-lao.webp" alt="LAO">
+          </div>
+          <div class="logo-item">
+            <img src="assets/img/logos/logo-poleoduto.webp" alt="Poleoduto">
+          </div>
+          <div class="logo-item">
+            <img src="assets/img/logos/logo-strahal.webp" alt="Strahal">
+          </div>
+          <div class="logo-item">
+            <img src="assets/img/logos/logo-triade.webp" alt="Tríade">
+          </div>
         </div>
       </div>
     </section>
@@ -95,189 +121,186 @@
     <section class="section" id="solucoes">
       <div class="container">
         <div class="section-header text-center">
-          <h2>Nossas soluções industriais</h2>
+          <h2>Categorias de soluções industriais</h2>
           <p class="section-lead">
-            Atendemos uma gama ampla de necessidades industriais através de linhas completas de produtos
-            e equipamentos. Veja as principais categorias que representamos:
+            Do diagnóstico à indicação técnica, atuamos em diferentes frentes que
+            impactam a estrutura, a eficiência e a segurança da sua operação.
           </p>
         </div>
 
         <div class="cards-grid">
-          <!-- Eletromecânicos -->
+
+          <!-- Card 1: Eletromecânicos -->
           <article class="card">
             <img src="assets/img/ilustracoes/categoria-eletromecanicos.webp"
-                 alt="Leitos para cabos, eletrocalhas e estruturas metálicas"
-                 class="card-image">
+                 alt="Linha de produção com estruturas metálicas e equipamentos eletromecânicos"
+                 class="card-image"
+                 loading="lazy">
             <div class="card-body">
               <h3>Eletromecânicos</h3>
               <p>
-                Estruturas metálicas e eletromecânicas para suportação e organização de cabos e equipamentos,
-                com galvanização a fogo, eletrolítica, bicromatização, decapagem, passivação e pintura
-                eletrostática.
+                Estruturas e equipamentos eletromecânicos para uso industrial, com foco
+                em robustez, desempenho e adequação às normas vigentes.
               </p>
               <ul class="card-list">
-                <li>Leitos para cabos e eletrocalhas</li>
-                <li>Perfis estruturais, suportes especiais e modulares</li>
-                <li>Selo PW e cable cleats</li>
-                <li>Abrigos para inversores solares</li>
-                <li>Projetos especiais sob medida</li>
+                <li>Pontes rolantes e talhas</li>
+                <li>Guindastes e elevadores de carga</li>
+                <li>Estruturas metálicas industriais</li>
+                <li>Equipamentos de movimentação</li>
               </ul>
             </div>
           </article>
 
-          <!-- PRFV -->
+          <!-- Card 2: PRFV -->
           <article class="card">
-            <img src="assets/img/ilustracoes/categoria-prfv.webp"
-                 alt="Estruturas em PRFV para ambientes agressivos"
-                 class="card-image">
+            <img src="assets/img/ilustracoes/categoria-prfv-estruturas.webp"
+                 alt="Estruturas modulares e passarelas em PRFV para uso industrial"
+                 class="card-image"
+                 loading="lazy">
             <div class="card-body">
-              <h3>PRFV – Fibra de Vidro</h3>
+              <h3>Estruturas em PRFV</h3>
               <p>
-                Compósitos em PRFV produzidos por pultrusão, filament winding e laminação. Até 75% mais
-                leves que o aço, com alta resistência mecânica, química e dielétrica.
+                Perfis, grades, escadas, passarelas e estruturas em Plástico Reforçado
+                com Fibra de Vidro — leves, anticorrosivos e de longa durabilidade.
               </p>
               <ul class="card-list">
-                <li>Guarda-corpos, escadas e grades de piso</li>
-                <li>Perfis estruturais e perfis deck</li>
-                <li>Postes para distribuição, transmissão e telecom</li>
-                <li>Calhas coletoras, leitos para cabos e eletrocalhas</li>
-                <li>Tampas, derivações e projetos especiais</li>
+                <li>Perfis pultrudados e grades moldadas</li>
+                <li>Escadas e passarelas industriais</li>
+                <li>Corrimãos e guarda-corpos</li>
+                <li>Estruturas para ambientes corrosivos</li>
               </ul>
-              <p class="card-note">
-                Aplicações ideais: saneamento, offshore, petróleo & gás, química e petroquímica,
-                ambientes agressivos e áreas classificadas.
-              </p>
             </div>
           </article>
 
-          <!-- Engenharia & Inspeção -->
+          <!-- Card 3: Engenharia & Inspeção -->
           <article class="card">
-            <img src="assets/img/ilustracoes/categoria-eng-insp.webp"
-                 alt="Inspeção industrial e laudos técnicos"
-                 class="card-image">
+            <img src="assets/img/ilustracoes/categoria-engenharia-inspecao.webp"
+                 alt="Técnico realizando inspeção de equipamento industrial com tablet"
+                 class="card-image"
+                 loading="lazy">
             <div class="card-body">
-              <h3>Engenharia & Inspeção Industrial</h3>
+              <h3>Engenharia e Inspeção Industrial</h3>
               <p>
-                Serviços de inspeção, laudos e projetos de adequação, com foco em segurança, conformidade
-                normativa e confiabilidade dos ativos.
+                Serviços técnicos especializados em segurança de máquinas e equipamentos,
+                com emissão de laudos, memoriais e projetos de adequação.
               </p>
               <ul class="card-list">
-                <li>Inspeção de pontes e pórticos rolantes, talhas e monovias</li>
-                <li>Inspeção de elevadores de carga e guindastes</li>
-                <li>Reconstituição de memoriais de cálculo e documentação técnica</li>
-                <li>Inventário de máquinas e adequações eletromecânicas</li>
-                <li>Projetos de sistemas antiqueda e projetos especiais</li>
+                <li>Inspeção de pontes rolantes, talhas e guindastes</li>
+                <li>Laudo e reconstituição de memoriais descritivos</li>
+                <li>Inventário de máquinas e adequação NR12</li>
+                <li>Sistemas antiqueda e projetos de segurança</li>
               </ul>
             </div>
           </article>
 
-          <!-- Iluminação e Ventilação Natural -->
+          <!-- Card 4: Iluminação e Ventilação Natural -->
           <article class="card">
-            <img src="assets/img/ilustracoes/categoria-ilum-vent.webp"
-                 alt="Lanternins, exaustores e domos para galpões"
-                 class="card-image">
+            <img src="assets/img/ilustracoes/categoria-iluminacao-ventilacao.webp"
+                 alt="Galpão industrial com domos de ventilação e iluminação natural no telhado"
+                 class="card-image"
+                 loading="lazy">
             <div class="card-body">
               <h3>Iluminação e Ventilação Natural</h3>
               <p>
-                Equipamentos para aproveitamento de luz natural e renovação de ar, reduzindo o consumo
-                de energia elétrica e melhorando o conforto térmico.
+                Sistemas de iluminação natural e ventilação para galpões industriais,
+                comerciais e logísticos, com foco em conforto térmico e redução de consumo.
               </p>
               <ul class="card-list">
-                <li>Lanternins e exaustores</li>
-                <li>Insufladores e sistemas de ventilação</li>
-                <li>Domos e claraboias</li>
+                <li>Lanternins industriais</li>
+                <li>Domos e abóbadas translúcidas</li>
+                <li>Exaustores e insufladores</li>
+                <li>Claraboias e sheds</li>
               </ul>
-              <p class="card-note">
-                Aplicações: galpões, indústrias, supermercados e projetos especiais em todo o Brasil.
-              </p>
             </div>
           </article>
 
-          <!-- Medidores de água e gás -->
+          <!-- Card 5: Medição de Água e Gás -->
           <article class="card">
             <img src="assets/img/ilustracoes/categoria-medicao-agua-gas.webp"
-                 alt="Medidores de água e gás para aplicações residenciais, comerciais e industriais"
-                 class="card-image">
+                 alt="Sistema de tubulações e medidores para controle de água e gás industrial"
+                 class="card-image"
+                 loading="lazy">
             <div class="card-body">
-              <h3>Medidores de água e gás</h3>
+              <h3>Medição de Água e Gás</h3>
               <p>
-                Hidrômetros e medidores de gás conforme normas nacionais e internacionais, para
-                aplicações residenciais, comerciais e industriais.
+                Hidrômetros, medidores de gás e sistemas de telemedição para controle
+                preciso do consumo em condomínios, indústrias e concessionárias.
               </p>
               <ul class="card-list">
-                <li>Alta precisão de medição</li>
-                <li>Durabilidade e resistência</li>
-                <li>Design compacto e eficiente</li>
+                <li>Hidrômetros residenciais e industriais</li>
+                <li>Medidores de gás</li>
+                <li>Caixas de medição e abrigos</li>
+                <li>Telemedição com saída de pulso</li>
               </ul>
             </div>
           </article>
 
-          <!-- Soluções elétricas e de medição -->
+          <!-- Card 6: Soluções Elétricas e de Medição -->
           <article class="card">
             <img src="assets/img/ilustracoes/categoria-eletricas-medicao.webp"
-                 alt="Caixas e quadros elétricos para medição e distribuição"
-                 class="card-image">
+                 alt="Painel elétrico e sistemas de medição industrial organizados"
+                 class="card-image"
+                 loading="lazy">
             <div class="card-body">
-              <h3>Soluções elétricas e de medição</h3>
+              <h3>Soluções Elétricas e de Medição</h3>
               <p>
-                Linha completa de produtos elétricos e de medição, com qualidade certificada e
-                homologação nas principais concessionárias do país.
+                Caixas, quadros, plugs industriais e string boxes para sistemas
+                fotovoltaicos, com certificação e adequação às normas técnicas.
               </p>
               <ul class="card-list">
-                <li>Caixas string box para sistemas fotovoltaicos</li>
-                <li>Caixas para hidrômetros, passagem e distribuição</li>
-                <li>Quadros de distribuição e caixas de policarbonato</li>
-                <li>Plugues, tomadas industriais e acessórios</li>
+                <li>String boxes para sistemas fotovoltaicos</li>
+                <li>Caixas de policarbonato e termoplástico</li>
+                <li>Plugs e tomadas industriais</li>
+                <li>Quadros e painéis elétricos</li>
               </ul>
-              <p class="card-note">
-                Pronto para telemedição: modelos pré-equipados com saída de pulso para integração
-                com sistemas de telemetria remota.
-              </p>
             </div>
           </article>
 
-          <!-- Produtos em Polipropileno -->
+          <!-- Card 7: Produtos em Polipropileno -->
           <article class="card">
             <img src="assets/img/ilustracoes/categoria-polipropileno.webp"
-                 alt="Tanques e equipamentos em polipropileno para uso industrial"
-                 class="card-image">
+                 alt="Tanques e equipamentos industriais em polipropileno"
+                 class="card-image"
+                 loading="lazy">
             <div class="card-body">
-              <h3>Produtos e Equipamentos em Polipropileno</h3>
+              <h3>Produtos em Polipropileno</h3>
               <p>
-                Equipamentos e sistemas em polipropileno (PP), com baixa absorção de umidade, boa
-                rigidez, isolamento térmico e elétrico, resistência a impactos, químicos e radiação UV.
+                Equipamentos e sistemas em polipropileno (PP), com resistência a
+                químicos, impactos, radiação UV e alta variação de temperatura.
               </p>
               <ul class="card-list">
-                <li>Máquinas e tanques em PP</li>
+                <li>Tanques e máquinas em PP</li>
                 <li>Sistemas de exaustão industrial</li>
                 <li>Contenções e lavadoras</li>
-                <li>Sistemas de filtragem</li>
-                <li>Projetos especiais sob medida</li>
+                <li>Sistemas de filtragem e projetos especiais</li>
               </ul>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
-    <!-- PROCESSO -->
+    <!-- COMO ATENDEMOS -->
     <section class="section section-light">
       <div class="container">
         <div class="section-header text-center">
           <h2>Como atendemos sua indústria</h2>
           <p class="section-lead">
-            Mais do que vender produtos, ajudamos a escolher a solução certa para cada aplicação,
-            conectando sua demanda às linhas dos fabricantes que representamos.
+            Mais do que vender produtos, ajudamos a escolher a solução certa para
+            cada aplicação, conectando sua demanda às linhas dos fabricantes que representamos.
           </p>
         </div>
 
         <div class="steps-grid">
+
           <div class="step">
             <div class="step-num">01</div>
             <h3>Entendimento da necessidade</h3>
             <p>
-              Você apresenta o cenário: tipo de projeto, ambiente, demanda técnica e prazos. Nosso time
-              faz perguntas específicas para entender normas, condições de instalação e restrições do local.
+              Você nos apresenta o cenário: tipo de projeto, ambiente, demanda técnica
+              e prazos. Nosso time faz perguntas específicas para entender normas,
+              condições de instalação e restrições do local.
             </p>
           </div>
 
@@ -285,8 +308,8 @@
             <div class="step-num">02</div>
             <h3>Seleção da solução e do fabricante</h3>
             <p>
-              Avaliamos as linhas dos fabricantes representados e indicamos as opções mais adequadas —
-              técnica e economicamente — para o seu caso.
+              Avaliamos as linhas dos fabricantes representados e indicamos as opções
+              mais adequadas — técnica e economicamente — para o seu caso.
             </p>
           </div>
 
@@ -294,8 +317,8 @@
             <div class="step-num">03</div>
             <h3>Proposta técnica e comercial</h3>
             <p>
-              Estruturamos uma proposta clara, com especificações, quantidades, condições comerciais
-              e prazos de entrega, alinhada com o fabricante.
+              Estruturamos uma proposta clara, com especificações, quantidades,
+              condições comerciais e prazos de entrega, alinhada com o fabricante.
             </p>
           </div>
 
@@ -303,26 +326,28 @@
             <div class="step-num">04</div>
             <h3>Acompanhamento até a entrega</h3>
             <p>
-              Apoiamos na interface com o fabricante, tira-dúvidas técnicos e eventuais ajustes, garantindo
-              que o produto chegue conforme o especificado.
+              Apoiamos na interface com o fabricante, dúvidas técnicas e eventuais
+              ajustes, garantindo que o produto chegue conforme o especificado.
             </p>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- SEGMENTOS -->
+    <!-- SEGMENTOS ATENDIDOS -->
     <section class="section" id="segmentos">
       <div class="container">
         <div class="section-header text-center">
           <h2>Segmentos e aplicações que atendemos</h2>
           <p class="section-lead">
-            As soluções que representamos estão presentes em diferentes tipos de indústrias e instalações.
+            Nossas soluções estão presentes em diferentes tipos de indústrias
+            e instalações, sempre adaptadas à realidade de cada operação.
           </p>
         </div>
 
         <div class="segments-grid">
-          <div class="segment-item">Indústrias (alimentos, química, metalurgia, etc.)</div>
+          <div class="segment-item">Indústrias (alimentos, química, metalurgia)</div>
           <div class="segment-item">Saneamento e infraestrutura</div>
           <div class="segment-item">Galpões logísticos e centros de distribuição</div>
           <div class="segment-item">Supermercados e atacarejos</div>
@@ -333,35 +358,52 @@
     </section>
 
     <!-- CTA FINAL / CONTATO -->
-    <section class="section section-light" id="contato">
+    <section class="section section-cta" id="contato">
       <div class="container">
         <div class="section-header text-center">
           <h2>Vamos falar sobre as necessidades da sua planta?</h2>
           <p class="section-lead">
-            Conte rapidamente o que você precisa e vamos indicar a melhor linha de produtos entre os
-            fabricantes que representamos.
+            Conte rapidamente o que você precisa e vamos indicar a melhor solução
+            entre os fabricantes que representamos.
           </p>
         </div>
 
-        <div class="text-center">
-          <p style="margin-bottom: 8px;">WhatsApp</p>
-          <p style="margin-bottom: 16px;">
-            <a href="https://wa.me/5541999214921" class="btn btn-primary" target="_blank" rel="noopener">
+        <div class="cta-contacts">
+          <div class="cta-block">
+            <p class="cta-label">WhatsApp – Weslei</p>
+            <a href="https://wa.me/5541999214921?text=Ol%C3%A1%20Weslei%2C%20vim%20pelo%20site%20da%20Girasul%20e%20gostaria%20de%20falar%20sobre%20solu%C3%A7%C3%B5es%20industriais."
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener">
               Falar com Weslei
             </a>
-            &nbsp;&nbsp;
-            <a href="https://wa.me/5541987773160" class="btn btn-outline" target="_blank" rel="noopener">
+          </div>
+
+          <div class="cta-block">
+            <p class="cta-label">WhatsApp – Alexandre</p>
+            <a href="https://wa.me/5541987773160?text=Ol%C3%A1%20Alexandre%2C%20vim%20pelo%20site%20da%20Girasul%20e%20gostaria%20de%20falar%20sobre%20solu%C3%A7%C3%B5es%20industriais."
+               class="btn btn-outline"
+               target="_blank"
+               rel="noopener">
               Falar com Alexandre
             </a>
-          </p>
-          <p style="margin-bottom: 8px;">E-mail</p>
-          <p><a href="mailto:girasul@girasul.com.br">girasul@girasul.com.br</a></p>
+          </div>
+
+          <div class="cta-block">
+            <p class="cta-label">E-mail</p>
+            <a href="mailto:girasul@girasul.com.br"
+               class="btn btn-outline">
+              girasul@girasul.com.br
+            </a>
+          </div>
         </div>
+
       </div>
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
@@ -369,14 +411,15 @@
              alt="Girasul Representações"
              class="footer-logo">
         <p class="footer-text">
-          Representações técnicas em soluções industriais. Estruturas, PRFV, medição, iluminação,
-          ventilação natural, polipropileno e serviços de engenharia & inspeção.
+          Representações técnicas em soluções industriais. Estruturas, PRFV, medição,
+          iluminação, ventilação natural, polipropileno e engenharia & inspeção.
         </p>
       </div>
       <div>
         <p class="footer-text">
-          Contato: <a href="mailto:girasul@girasul.com.br">girasul@girasul.com.br</a><br>
-          Weslei: (41) 99921-4921 · Alexandre: (41) 98777-3160
+          <a href="mailto:girasul@girasul.com.br">girasul@girasul.com.br</a><br><br>
+          Weslei: (41) 99921-4921<br>
+          Alexandre: (41) 98777-3160
         </p>
       </div>
     </div>
@@ -388,4 +431,3 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-
