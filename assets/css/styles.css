@@ -585,12 +585,12 @@ p {
 /* SEGMENTOS */
 .segments-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
 }
 
 .segment-item {
-  padding: 12px 18px;
+  padding: 12px 20px;
   border-radius: 999px;
   border: 1px solid var(--color-border);
   font-size: 0.9rem;
@@ -598,6 +598,7 @@ p {
   color: var(--color-text);
   background-color: #ffffff;
   text-align: center;
+  box-shadow: 0 3px 10px rgba(15,23,42,0.04);
 }
 
 /* RESPONSIVO */
@@ -652,3 +653,4 @@ p {
   .btn-cta-primary { width: 100%; }
   .logos-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
