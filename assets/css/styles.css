@@ -408,7 +408,7 @@ p {
 }
 
 .logo-item img {
-  max-height: 40px;
+  max-height: 52px;
   width: auto;
   object-fit: contain;
 }
@@ -772,4 +772,5 @@ p {
   .btn { width: 100%; justify-content: center; }
   .logos-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
 
