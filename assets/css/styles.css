@@ -676,9 +676,100 @@ p {
   .footer-grid { flex-direction: column; gap: 28px; }
   .logos-grid { grid-template-columns: repeat(3, 1fr); }
 }
+/* BOTÃO DO HEADER */
+.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 4px 14px rgba(37,99,235,0.3);
+  transition: all 0.2s;
+}
+
+.btn-nav:hover {
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
+  box-shadow: 0 6px 20px rgba(30,64,175,0.4);
+  transform: translateY(-1px);
+}
+
+/* CTA SECTION — títulos e botões sempre legíveis */
+.section-cta {
+  background: radial-gradient(circle at top left, #1d4ed8 0%, #0f172a 60%);
+}
+
+.cta-title {
+  color: #ffffff !important;
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+}
+
+.cta-lead {
+  color: #cbd5e1 !important;
+}
+
+.cta-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #93c5fd;
+  margin-bottom: 10px;
+}
+
+.btn-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 28px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 6px 20px rgba(37,99,235,0.5);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-cta-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(37,99,235,0.6);
+}
+
+.btn-cta-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 28px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border: 2px solid rgba(255,255,255,0.35);
+  transition: all 0.2s;
+  white-space: nowrap;
+  backdrop-filter: blur(4px);
+}
+
+.btn-cta-outline:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.7);
+  transform: translateY(-2px);
+}
 
 @media (max-width: 480px) {
   .hero-ctas { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
   .logos-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
