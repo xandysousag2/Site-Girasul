@@ -435,10 +435,10 @@ p { color: var(--color-text-soft); line-height: 1.75; }
    ============================================= */
 
 .section-cta {
-  padding: 80px 0;
-  background: radial-gradient(circle at 0% 0%, #2563eb 0, #1e40af 45%, #020617 100%);
-  color: #ffffff;
+  background: radial-gradient(circle at top left, #1d4ed8 0%, #0f172a 60%);
+  padding: 96px 0;
 }
+
 
 .section-cta h2 { color: #ffffff; }
 .section-cta .section-lead { color: #bfdbfe; }
@@ -777,5 +777,6 @@ p { color: var(--color-text-soft); line-height: 1.75; }
   .fab-grid         { grid-template-columns: repeat(2, 1fr); }
   .logos-grid       { grid-template-columns: repeat(2, 1fr); }
 }
+
 
 
