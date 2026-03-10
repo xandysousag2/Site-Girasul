@@ -383,7 +383,7 @@ p { color: var(--color-text-soft); line-height: 1.75; }
 .why-item h3 { margin-bottom: 8px; }
 .why-item p { font-size: 0.92rem; margin: 0; }
 
-/* CTA SECTION */
+/* CTA ESCURO */
 .section-cta {
   background: radial-gradient(circle at top left, #1d4ed8 0%, #0f172a 65%);
   padding: 88px 0;
@@ -397,12 +397,11 @@ p { color: var(--color-text-soft); line-height: 1.75; }
   color: #cbd5e1 !important;
 }
 
+/* container do(s) botão(ões) dentro do CTA */
 .cta-contacts {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
 .cta-block {
@@ -671,3 +670,4 @@ p { color: var(--color-text-soft); line-height: 1.75; }
   .btn-cta { width: 100%; }
   .logos-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
