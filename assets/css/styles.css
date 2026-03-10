@@ -353,7 +353,7 @@ p { color: var(--color-text-soft); line-height: 1.75; }
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: 64px;
-  align-items: start;
+  align-items: center;
 }
 
 .about-text p {
@@ -435,8 +435,8 @@ p { color: var(--color-text-soft); line-height: 1.75; }
    ============================================= */
 
 .section-cta {
-  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
-  padding: 80px 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 88px 0;
 }
 
 .section-cta h2 { color: #ffffff; }
@@ -776,3 +776,4 @@ p { color: var(--color-text-soft); line-height: 1.75; }
   .fab-grid         { grid-template-columns: repeat(2, 1fr); }
   .logos-grid       { grid-template-columns: repeat(2, 1fr); }
 }
+
