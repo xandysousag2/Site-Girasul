@@ -435,8 +435,9 @@ p { color: var(--color-text-soft); line-height: 1.75; }
    ============================================= */
 
 .section-cta {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  padding: 88px 0;
+  padding: 80px 0;
+  background: radial-gradient(circle at 0% 0%, #2563eb 0, #1e40af 45%, #020617 100%);
+  color: #ffffff;
 }
 
 .section-cta h2 { color: #ffffff; }
@@ -776,4 +777,5 @@ p { color: var(--color-text-soft); line-height: 1.75; }
   .fab-grid         { grid-template-columns: repeat(2, 1fr); }
   .logos-grid       { grid-template-columns: repeat(2, 1fr); }
 }
+
 
