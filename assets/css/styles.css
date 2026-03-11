@@ -373,7 +373,7 @@ p {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Duas colunas para desktop */
   gap: 64px;
   align-items: center;
 }
@@ -388,67 +388,52 @@ p {
 
 .about-text .badge { margin-bottom: 12px; }
 
-.about-highlights {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-top: 24px;
+.about-text h2 { margin-bottom: 18px; } /* Ajuste de espaçamento */
+.about-text p { margin-bottom: 14px; } /* Ajuste de espaçamento */
+
+.about-bullets {
+  margin-top: 32px; /* Espaçamento maior entre o texto e os bullets */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas para os bullets */
+  gap: 28px 24px; /* Espaçamento entre os bullets */
 }
 
-.about-highlight-item {
+.about-bullet-item {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* Alinha o bullet no topo do texto */
   gap: 12px;
 }
 
-.about-highlight-dot {
+.about-bullet-dot {
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 999px; /* Faz um círculo perfeito */
   background-color: var(--color-primary);
-  flex-shrink: 0;
-  margin-top: 7px;
+  margin-top: 7px; /* Alinha o bullet com a primeira linha do texto */
+  flex-shrink: 0; /* Garante que o bullet não encolha */
 }
 
-.about-highlight-item p {
-  font-size: 0.95rem;
-  color: var(--color-text-soft);
-  margin: 0;
-  line-height: 1.6;
-}
-
-.about-highlights {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-left: 0;
-}
-
-.about-highlights li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.about-highlight-title {
+.about-bullet-title {
   font-weight: 600;
   color: #0f172a;
-  margin-right: 4px;
+  font-size: 0.95rem;
+  margin-bottom: 4px; /* Espaçamento entre título e texto do bullet */
+  line-height: 1.4;
 }
 
-.about-highlight-text {
+.about-bullet-text {
+  font-size: 0.9rem;
   color: #64748b;
+  line-height: 1.6;
+  margin: 0;
 }
 
-.about-highlights li::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  margin-top: 8px;
-  flex-shrink: 0;
+/* Responsivo para o bloco "Sobre a Girasul" */
+@media (max-width: 768px) {
+  .about-bullets {
+    grid-template-columns: 1fr; /* Uma coluna para os bullets em mobile */
+    gap: 24px;
+  }
 }
 /* =============================================
    WHY / DIFERENCIAIS
@@ -864,4 +849,5 @@ p {
   .fab-grid         { grid-template-columns: repeat(2, 1fr); }
   .logos-grid       { grid-template-columns: repeat(2, 1fr); }
 }
+
 
