@@ -417,6 +417,39 @@ p {
   line-height: 1.6;
 }
 
+.about-highlights {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 0;
+}
+
+.about-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.about-highlight-title {
+  font-weight: 600;
+  color: #0f172a;
+  margin-right: 4px;
+}
+
+.about-highlight-text {
+  color: #64748b;
+}
+
+.about-highlights li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  margin-top: 8px;
+  flex-shrink: 0;
+}
 /* =============================================
    WHY / DIFERENCIAIS
    ============================================= */
@@ -456,13 +489,19 @@ p {
    CTA SECTION
    ============================================= */
 
+/* CTA */
 .section-cta {
-  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 60%, #1e3a8a 100%);
+  background: radial-gradient(circle at top left, #1d4ed8 0%, #0f172a 60%);
+  padding: 96px 0;
+}
+
+.section-cta h2 {
   color: #ffffff;
 }
 
-.section-cta h2 { color: #ffffff; }
-.section-cta .section-lead { color: #bfdbfe; }
+.section-cta .section-lead {
+  color: #bfdbfe;
+}
 
 .cta-contacts {
   display: flex;
@@ -825,3 +864,4 @@ p {
   .fab-grid         { grid-template-columns: repeat(2, 1fr); }
   .logos-grid       { grid-template-columns: repeat(2, 1fr); }
 }
+
