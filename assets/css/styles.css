@@ -342,7 +342,29 @@ p {
   color: var(--color-text-soft);
   margin: 0;
 }
+.home-cat-brands {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
 
+.home-cat-brands img {
+  max-height: 24px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.7;
+  filter: grayscale(15%);
+  transition: opacity 0.2s, filter 0.2s;
+}
+
+.home-cat:hover .home-cat-brands img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
 /* =============================================
    SOBRE — ABOUT GRID
    ============================================= */
@@ -757,4 +779,5 @@ p {
   .hero-image       { max-height: 360px; width: 100%; }
   .about-grid       { grid-template-columns: 1fr; gap: 40px; }
   .home-categories  { grid-template-columns: repeat(2, 1fr);
+
 
