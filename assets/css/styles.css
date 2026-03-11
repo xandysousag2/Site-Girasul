@@ -342,125 +342,123 @@ p {
   color: var(--color-text-soft);
   margin: 0;
 }
+
+/* Logos dentro dos cards da home */
 .home-cat-brands {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 14px;
-  padding-top: 12px;
+  gap: 14px;
+  margin-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid var(--color-border);
   flex-wrap: wrap;
 }
 
 .home-cat-brands img {
-  max-height: 24px;
+  max-height: 36px;
   width: auto;
   object-fit: contain;
-  opacity: 0.7;
-  filter: grayscale(15%);
-  transition: opacity 0.2s, filter 0.2s;
+  opacity: 1;
+  filter: none;
+  transition: transform 0.2s;
 }
 
 .home-cat:hover .home-cat-brands img {
-  opacity: 1;
-  filter: grayscale(0%);
+  transform: translateY(-1px);
 }
+
 /* =============================================
-   SOBRE — ABOUT GRID
+   ABOUT (bloco Sobre a Girasul — home)
    ============================================= */
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 64px;
   align-items: center;
 }
 
-.about-text p {
-  margin-bottom: 14px;
-}
-
-.about-visual {
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(15,23,42,0.12);
-}
-
 .about-visual img {
   width: 100%;
-  height: 100%;
   max-height: 420px;
   object-fit: cover;
-  display: block;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(15,23,42,0.13);
 }
 
-/* =============================================
-   LOGOS GRID (marcas — home)
-   ============================================= */
+.about-text .badge { margin-bottom: 12px; }
 
-.logos-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.about-highlight-item {
+  display: flex;
+  align-items: flex-start;
   gap: 12px;
 }
 
-.logo-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 10px;
-  border-radius: 10px;
-  border: 1px solid var(--color-border);
-  background-color: #ffffff;
-  transition: box-shadow 0.2s;
+.about-highlight-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 7px;
 }
 
-.logo-item:hover {
-  box-shadow: 0 4px 14px rgba(15,23,42,0.08);
-}
-
-.logo-item img {
-  max-height: 38px;
-  width: auto;
-  object-fit: contain;
-  filter: grayscale(30%);
-  transition: filter 0.2s;
-}
-
-.logo-item:hover img {
-  filter: grayscale(0%);
+.about-highlight-item p {
+  font-size: 0.95rem;
+  color: var(--color-text-soft);
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* =============================================
-   WHY GIRASUL
+   WHY / DIFERENCIAIS
    ============================================= */
 
 .why-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 20px;
 }
 
-.why-item {
-  padding: 28px 24px;
-  border-radius: var(--radius);
+.why-card {
   background-color: #ffffff;
-  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
   box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.why-item h3 {
-  color: var(--color-text);
-  margin-bottom: 8px;
+.why-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15,23,42,0.1);
 }
+
+.why-icon {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.why-card h3 { font-size: 1rem; color: #0f172a; }
+.why-card p  { font-size: 0.88rem; color: #64748b; margin: 0; }
 
 /* =============================================
-   CTA
+   CTA SECTION
    ============================================= */
 
 .section-cta {
-  background: radial-gradient(circle at top left, #1d4ed8 0%, #0f172a 60%);
-  padding: 96px 0;
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 60%, #1e3a8a 100%);
+  color: #ffffff;
 }
 
 .section-cta h2 { color: #ffffff; }
@@ -484,17 +482,15 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 48px;
-  border-radius: 10px;
+  padding: 16px 36px;
   background-color: #ffffff;
   color: var(--color-primary);
+  border-radius: 10px;
   font-family: "Montserrat", system-ui, sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
   text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
   white-space: nowrap;
 }
 
@@ -508,16 +504,15 @@ p {
   align-items: center;
   justify-content: center;
   padding: 16px 36px;
-  border-radius: 10px;
   background-color: transparent;
   color: #ffffff;
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 10px;
   font-family: "Montserrat", system-ui, sans-serif;
-  font-weight: 600;
-  font-size: 0.95rem;
-  border: 2px solid rgba(255,255,255,0.5);
-  cursor: pointer;
-  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  font-weight: 700;
+  font-size: 1rem;
   text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
   white-space: nowrap;
 }
 
@@ -528,7 +523,7 @@ p {
 }
 
 /* =============================================
-   FABRICANTES (página de soluções)
+   FABRICANTES (fab-grid)
    ============================================= */
 
 .fab-grid {
@@ -562,15 +557,15 @@ p {
 }
 
 /* =============================================
-   CARD BRANDS (logos dentro dos cards de soluções)
+   CARD BRANDS (logos dentro dos cards detalhados)
    ============================================= */
 
 .card-brands {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 12px;
-  padding-top: 12px;
+  margin-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid var(--color-border);
 }
 
@@ -586,25 +581,24 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .card-brands-logos img {
-  max-height: 28px;
+  max-height: 34px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(20%);
-  opacity: 0.85;
-  transition: opacity 0.2s, filter 0.2s;
+  opacity: 1;
+  filter: none;
+  transition: transform 0.2s;
 }
 
 .card-brands-logos img:hover {
-  opacity: 1;
-  filter: grayscale(0%);
+  transform: translateY(-1px);
 }
 
 /* =============================================
-   SEGMENTOS (página de soluções)
+   SEGMENTOS
    ============================================= */
 
 .seg-grid {
@@ -778,6 +772,56 @@ p {
   .hero-grid        { grid-template-columns: 1fr; gap: 40px; }
   .hero-image       { max-height: 360px; width: 100%; }
   .about-grid       { grid-template-columns: 1fr; gap: 40px; }
-  .home-categories  { grid-template-columns: repeat(2, 1fr);
+  .home-categories  { grid-template-columns: repeat(2, 1fr); }
+  .why-grid         { grid-template-columns: repeat(2, 1fr); }
+  .logos-grid       { grid-template-columns: repeat(5, 1fr); }
+  .fab-grid         { grid-template-columns: repeat(3, 1fr); }
+  .seg-grid         { grid-template-columns: repeat(2, 1fr); }
+}
 
+@media (max-width: 768px) {
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.5rem; }
 
+  .hero        { padding: 64px 0 56px; }
+  .section     { padding: 60px 0; }
+  .section-cta { padding: 64px 0; }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 20px 24px 24px;
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 12px 32px rgba(15,23,42,0.1);
+    gap: 18px;
+    z-index: 99;
+  }
+
+  .main-nav.nav-open { display: flex; }
+  .nav-toggle        { display: flex; }
+
+  .home-categories  { grid-template-columns: 1fr; }
+  .why-grid         { grid-template-columns: 1fr; }
+  .steps-grid       { grid-template-columns: 1fr; }
+  .cards-grid       { grid-template-columns: 1fr; }
+  .fab-grid         { grid-template-columns: repeat(2, 1fr); }
+  .seg-grid         { grid-template-columns: 1fr; }
+  .logos-grid       { grid-template-columns: repeat(3, 1fr); }
+  .cta-contacts     { flex-direction: column; align-items: center; }
+  .footer-grid      { flex-direction: column; gap: 28px; }
+}
+
+@media (max-width: 480px) {
+  .hero-ctas        { flex-direction: column; }
+  .btn              { width: 100%; justify-content: center; }
+  .btn-cta-primary  { width: 100%; }
+  .btn-cta-outline  { width: 100%; }
+  .fab-grid         { grid-template-columns: repeat(2, 1fr); }
+  .logos-grid       { grid-template-columns: repeat(2, 1fr); }
+}
